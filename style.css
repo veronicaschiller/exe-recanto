@@ -1,47 +1,109 @@
+/*-----------------------------------------------------------
+----------------Resetando os estilos do HTML-----------------
+-----------------------------------------------------------*/
+
 body,
-html {
-  background-image: url(funfo.jpg);
-  margin: auto;
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 header {
   background-color: rgba(103, 199, 94, 0.863);
 }
-img:hover {
-  opacity: 0.7;
-  
+html,
+body {
+  background-image: url(funfo.jpg);
+  overflow-y: none;
+}
+
+#main {
+  margin: auto;
+}
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.imagens-princpais + .imagens-princpais {
+  margin-left: 20px;
+}
+
+.imagens-princpais:hover {
+  transform: scale(1.8);
 }
 img {
+  display: block;
+  height: 300px;
+  width: 200px;
   border-radius: 40px;
-  justify-items: center;
+}
+
+#logo {
+  margin-left: 30px;
+}
+#h1 {
+  font-family: "Zilla Slab", serif;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(146, 189, 97);
+  padding: 5px 15px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(103, 199, 94, 0.863);
+  background-color: rgb(103, 199, 94);
   color: white;
   font-size: 20px;
   position: relative;
   border-bottom: 3px solid rgb(31, 131, 5);
   width: 100%;
   margin: 0;
-  font-family: 'Zilla Slab', serif;
+  font-family: "Zilla Slab", serif;
+  padding: 10px 10px;
 }
 nav h1:hover {
   color: rgba(60, 151, 60, 0.726);
 }
 nav ul {
   list-style: none;
-  margin: 10px;
+  margin-right: 30px;
   padding: 0;
   text-align: center;
 }
 nav ul li {
   display: inline;
 }
-
+nav ul li + li {
+  margin-left: 10px;
+}
 nav ul li a {
-  padding: 5px;
+  padding: 5px 15px;
   display: inline-block;
   background-color: rgb(31, 131, 5);
   color: white;
@@ -52,20 +114,70 @@ nav ul li a {
   border-color: rgb(31, 131, 5);
 }
 nav ul li a:hover {
-    color: rgb(36, 224, 19);
-    border-color: rgb(20, 245, 0);
-    transition-delay: 1ms;
+  color: rgb(36, 224, 19);
+  border-color: rgb(20, 245, 0);
+  transition-delay: 1ms;
 }
-.sobre{
+#sobre {
   background-color: white;
   text-align: center;
-  
+  opacity: 0.8;
+  box-sizing: border-box;
+  border-radius: 200px;
+}
+#bloco-central{
+  display: flex;
+  justify-content:center;
+  width: 50%;
 }
 footer {
+  display: static;
   position: absolute;
   text-align: center;
   font-size: 19px;
-  background-color: rgba(103, 199, 94, 0.863);
+  background-color: rgb(103, 199, 94);
   bottom: 0;
   width: 100%;
+  padding: 10px;
 }
+
+.formularios {
+  background-color: white;
+  font-family: "Zilla Slab", serif;
+  display:flex;
+  justify-content: center;
+}
+.s{
+  text-align: center;
+  font-family: "Zilla Slab", serif;
+  margin:1px;
+
+}
+@media screen and (max-width: 480px) {
+  form {
+      border: none;
+  }
+  .formularios {
+    background-color: white;
+    font-family: "Zilla Slab", serif;
+    display:flex;
+    justify-content: center;
+    margin-inline: 30px;
+  }
+}
+
+.btn-contratar{
+  border-bottom: 1px solid rgb(11, 73, 3);
+  bottom: 25px;
+  background-color:rgb(31, 131, 5) ;
+  border-style: inset;
+  border-radius: 30px;
+  margin:20px;
+margin-bottom: 30px;
+  
+}
+.btn-contratar:hover{
+  border-bottom: 3px;
+
+}
+
