@@ -1,0 +1,71 @@
+body,
+html {
+  background-image: url(funfo.jpg);
+  margin: auto;
+}
+header {
+  background-color: rgba(103, 199, 94, 0.863);
+}
+img:hover {
+  opacity: 0.7;
+  
+}
+img {
+  border-radius: 40px;
+  justify-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(103, 199, 94, 0.863);
+  color: white;
+  font-size: 20px;
+  position: relative;
+  border-bottom: 3px solid rgb(31, 131, 5);
+  width: 100%;
+  margin: 0;
+  font-family: 'Zilla Slab', serif;
+}
+nav h1:hover {
+  color: rgba(60, 151, 60, 0.726);
+}
+nav ul {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  padding: 5px;
+  display: inline-block;
+  background-color: rgb(31, 131, 5);
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid rgb(31, 131, 5);
+  border-radius: 20px;
+  border-style: inset;
+  border-color: rgb(31, 131, 5);
+}
+nav ul li a:hover {
+    color: rgb(36, 224, 19);
+    border-color: rgb(20, 245, 0);
+    transition-delay: 1ms;
+}
+.sobre{
+  background-color: white;
+  text-align: center;
+  
+}
+footer {
+  position: absolute;
+  text-align: center;
+  font-size: 19px;
+  background-color: rgba(103, 199, 94, 0.863);
+  bottom: 0;
+  width: 100%;
+}
